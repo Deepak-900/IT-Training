@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms || Day-06</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="firstname">Firstname : </label>
+      <input
+        type="text"
+        name="fname"
+        id="firstname"
+        placeholder="Enter your first name ..."
+        required
+      />
+      <br />
+      <br />
+      <label for="lastname">Lastname : </label>
+      <input
+        type="text"
+        name="lname"
+        id="lastname"
+        placeholder="Enter your last name ..."
+        required
+      />
+      <br />
+      <br />
+      <label for="age">Age : </label>
+      <input
+        type="number"
+        name="age"
+        placeholder="Age ..."
+        id="age"
+        min="1"
+        max="100"
+      />
+      <br />
+      <br />
+      <label for="email">Email :</label>
+      <input type="email" placeholder="Enter email ..." id="email" required />
+      <br />
+      <br />
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        id="password"
+        required
+      />
+      <br /><br />
+      <label for="dob">Date of birth :</label>
+      <input
+        type="date"
+        value=""
+        min="2025-05-21"
+        max="2025-05-30"
+        name="dob"
+        required
+      />
+      <br />
+      <br />
+      <label for="range">Range :</label>
+      <input type="range" name="" id="" min="1" max="10" />
+      <br />
+      <br />
+      <label for="gender">Gender :</label>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+      <input type="radio" id="others" name="gender" />
+      <label for="others">Others</label>
+      <br />
+      <br />
+      <label for="region">Region :</label>
+      <select name="" id="">
+        <option value="">Nepal</option>
+        <option value="">India</option>
+        <option value="">China</option>
+        <option value="">Africa</option>
+        <option value="">America</option>
+        <option value="">UAE</option>
+      </select>
+      <br />
+      <br />
+      <label for="color">Color :</label>
+      <input type="color" name="" id="color" value="#fe8d59" />
+      <br />
+      <br />
+      <label for="desc">Description : </label>
+      <textarea
+        name=""
+        id="desc"
+        placeholder="Enter description ..."
+        rows="5"
+        cols="30"
+      ></textarea>
+      <br />
+      <br />
+      <button>submit</button>
+    </form>
+  </body>
+</html>

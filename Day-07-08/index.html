@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day07-08</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+      legend {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"],
+      input[type="datetime-local"],
+      select,
+      textarea {
+        font-size: 16px;
+      }
+      tr td:first-child {
+        width: 30%;
+      }
+      tr td:nth-last-child {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" style="width: 50%">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="firstname">Firstname :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="fname"
+                id="firstname"
+                placeholder="Enter your firstname ..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lastname">Lastname :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="lname"
+                id="lastname"
+                placeholder="Enter your lastname ..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email :</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email ..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password :</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password ..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Phone No :</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                name=""
+                id="phone"
+                maxlength="10"
+                placeholder="Enter your phone number ..."
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Gender :</label></td>
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                id="gen-male"
+                value="Male"
+                checked
+              />
+              <label for="gen-male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="gen-female"
+                value="Female"
+              />
+              <label for="gen-female">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="gen-others"
+                value="Others"
+              />
+              <label for="gen-others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address :</label>
+            </td>
+            <td>
+              <select name="address" id="address">
+                <option value="" disabled selected>Choose your address</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Bhaktpur">Bhaktpur</option>
+                <option value="Thankot">Thankot</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Date of birth & time : </label>
+            </td>
+            <td>
+              <input type="datetime-local" name="" id="dob" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="color">Choose color :</label></td>
+            <td>
+              <input type="color" name="color" id="color" value="#c72dbb" />
+            </td>
+          </tr>
+          <tr style="vertical-align: top">
+            <td>
+              <label for="">Hobbies :</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="pg"
+                value="Playing Games"
+              />
+              <label for="pg">Playing Games</label><br />
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="sleeping"
+                value="sleeping"
+              />
+              <label for="sleeping">Sleeping</label><br />
+              <input
+                type="checkbox"
+                name="hobbies"
+                id="rb"
+                value="Reading Books"
+              />
+              <label for="rb">Reading Books</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="language">Language :</label></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li><label for="lang-eng">English :</label></li>
+              </ul>
+            </td>
+            <td>
+              <input
+                type="range"
+                name=""
+                id="lang-eng"
+                min="1"
+                max="10"
+                value="2"
+              />
+            </td>
+          </tr>
+          <tr style="vertical-align: top">
+            <td>
+              <ul style="margin-top: 0">
+                <li><label for="lang-nep">Nepali :</label></li>
+              </ul>
+            </td>
+            <td>
+              <input
+                type="range"
+                name=""
+                id="lang-nep"
+                min="1"
+                max="10"
+                value="3"
+              />
+            </td>
+          </tr>
+
+          <tr style="vertical-align: top">
+            <td><label for="desc">Description :</label></td>
+            <td>
+              <textarea
+                name="description"
+                id="desc"
+                cols="30"
+                rows="7"
+                placeholder="Enter about yourself ..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="image">Upload Image :</label>
+            </td>
+            <td>
+              <input type="file" name="img" id="image" accept="image/png," />
+            </td>
+          </tr>
+          <tr>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

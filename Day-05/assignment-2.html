@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Invoice</title>
+    <style>
+      body {
+        /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      .t-c-right {
+        text-align: right;
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" cellspacing="0" width="600">
+      <tr
+        style="background-color: #16365c; color: #ffffff; font-weight: bolder"
+      >
+        <td
+          rowspan="2"
+          colspan="6"
+          style="
+            text-align: center;
+            background-color: #16365c;
+            border: none;
+            font-size: 18px;
+            padding-left: 175px;
+          "
+        >
+          TAX INVOICE
+        </td>
+        <td colspan="2" style="border: none">INVOICE NO: 1234</td>
+      </tr>
+      <tr style="background-color: #16365c; color: #ffffff">
+        <td colspan="2" style="font-weight: bolder; border: none">
+          DATE: <span style="font-weight: normal">04-02-2022</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" style="text-align: center">
+          <ul style="list-style: none; text-align: center">
+            <li><h1 style="margin: 0; padding: 0">BUSINESS NAME</h1></li>
+            <li>132 Street, City, State, PIN</li>
+            <li>GSTIN: AAA213465</li>
+            <li>Email ID: 122@gmail.com</li>
+            <li>PAN NO: AAA132456</li>
+          </ul>
+        </td>
+      </tr>
+      <tr style="background-color: #dbeef4">
+        <td colspan="4">
+          <ul style="list-style: none; text-align: left; margin: 0">
+            <li><b>Bill To:</b></li>
+            <li>PARTY'S NAME -</li>
+            <li>ADDRESS:</li>
+            <li>132 Street, City, State, 132456</li>
+            <li>Email ID: 122@gmail.com</li>
+            <li>GSTIN: AAA213465</li>
+          </ul>
+        </td>
+        <td colspan="4">
+          <ul>
+            <li>Payment Due Date:</li>
+            <li>Payment Mode:</li>
+          </ul>
+        </td>
+      </tr>
+      <tr style="height: 26px">
+        <th colspan="4">Description</th>
+        <th>HSN Code</th>
+        <th>Qty</th>
+        <th>Rate</th>
+        <th>Amount</th>
+      </tr>
+      <tr height="200">
+        <td rowspan="2" colspan="4"></td>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Total</b></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="font-weight: bolder; background-color: #dbeef4">
+          <span><b>Terms & condition </b></span>
+          <ol type="1" style="margin: 0; padding-left: 16px">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </td>
+        <td
+          colspan="4"
+          style="vertical-align: top; font-weight: bolder; padding: 0"
+        >
+          <table style="width: 100%" cellspacing="0">
+            <tr>
+              <td colspan="2">Add : CGST @ 14%</td>
+              <td colspan="2" class="t-c-right">-</td>
+            </tr>
+            <tr>
+              <td colspan="2">Add : SGST @ 14%</td>
+              <td colspan="2" class="t-c-right">-</td>
+            </tr>
+            <tr>
+              <td colspan="2">Balance Received :</td>
+              <td colspan="2" class="t-c-right">-</td>
+            </tr>
+            <tr>
+              <td colspan="2">Balance Due :</td>
+              <td colspan="2" class="t-c-right">-</td>
+            </tr>
+            <tr style="background-color: #16365c; color: #fff; height: 26px">
+              <td colspan="2" style="padding-left: 5px">Grand Total</td>
+              <td colspan="2" class="t-c-right">-</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" style="padding: 10px 0">
+          <b
+            ><u><i>Total Amount (Rs. In Words) : </i></u></b
+          >
+        </td>
+      </tr>
+      <tr>
+        <td
+          colspan="8"
+          style="
+            height: 100px;
+            vertical-align: top;
+            padding-top: 10px;
+            font-weight: bolder;
+          "
+        >
+          <b><i>For: Business Name</i></b>
+          <p style="margin-top: 110px; font-weight: bolder">
+            <i> Authorised Signatory </i>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

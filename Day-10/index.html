@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Day 10</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+        text-decoration: underline;
+      }
+      #id-selector {
+        color: chocolate;
+        font-size: 5rem;
+        text-align: left;
+      }
+      .first {
+        text-align: right;
+      }
+      .second {
+        font-size: 45px;
+        animation: bounce 0.5s infinite alternate;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-30px);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- 
+    CSS:
+        Cascading Style Sheet
+        - to make page visually appealing structure
+    
+        selector{
+        ATTRIBUTE: VALUE;
+    }
+
+    selector: to which css is being applied
+    attribute: property of the elements to be changed
+    value: value of the property
+
+    selector types:
+        1. Element Selector: all the html elements. We use      element names. eg: h1, h2, p, ul, li, table, tr, form, input ..... etc.
+        2. Class Selector: we use user defined classes, while applying css. use dot (.) before the class name while defining style 
+            - Can use multiple class in HTML elements
+        3. ID selector: user defined ID, while applying CSS. use hashtag (#) before the IDs name while defining style
+            - Can use only one ID in HTML element
+
+        Priority: ID selector > Class Selector > Element Selector
+
+    CSS Type
+    1. Inline CSS
+        - CSS is written inside same tag/element, using style attribute.
+        - best for applying css to particular html element only
+        - has highest priority
+    2. Internal CSS
+        - CSS is written in same webpage, in tht head section inside <style></style> tag.
+        - best for single page website.
+    3. External CSS 
+        - CSS is written in separate file, saved with extension '.css' imported in html file, in head section using link tag.
+        EG: <link rel="stylesheet" href="./style.css" />
+        - No style keyword is required
+    Internal and External has equal priority and the oe defined at the end will overwrite previous one.
+    -->
+
+    <h1 id="id-selector">Id Selector</h1>
+    <h1 class="first">First <span>Heading</span></h1>
+    <h1 class="second newclass">Second Heading</h1>
+    <p class="first newclass">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam magnam
+      ipsa dicta asperiores perspiciatis rerum praesentium blanditiis harum
+      incidunt placeat, laborum eligendi sunt. Facilis quod nostrum quis alias
+      beatae numquam.
+    </p>
+  </body>
+</html>

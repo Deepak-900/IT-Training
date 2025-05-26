@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding: 100px;
+  background-color: black;
+}
+h1 {
+  background-color: chocolate;
+  padding: 100px;
+}
+.border-solid {
+  border: 5px solid #ffff;
+}
+.border-dotted {
+  border: 5px dotted #fff;
+}
+.border-double {
+  border: 5px double #fff;
+}
+.border-inset {
+  border: 5px inset #fff;
+}
+.border-outset {
+  border: 5px outset #fff;
+}
+.border-groove {
+  border: 5px groove #fff;
+}
+.border-ridge {
+  border: 5px ridge #fff;
+}
+.border-dashed {
+  border: 5px dashed #fff;
+}
+.solid-dotted-double-inset {
+  border-top: 10px solid #fff;
+  border-right: 10px dotted #fff;
+  border-bottom: 10px double #fff;
+  border-left: 10px inset #fff;
+}

@@ -1,59 +1,71 @@
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 body {
-  /* box-sizing: border-box; */
-  /* margin: 0;
-  padding: 0; */
+  background-image: url(https://imgs.search.brave.com/CAFd5jQtp0eV_hwnzIsDxIEK-Oc6khQpW2tznFHoAg0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNGtVZlIt/NENvS1hra1VpdC1j/UlBlYkhEQV8wYUFt/SEJmeXdMMFJyZGRH/cy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl3/YVhocy9jaTVqYjIw/dmFXMW5MM1J2L2Iy/d3ZjM1Z3WlhJdGMy/aGgvY25BdGFXNW1i/eTUzWldKdw.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #000; */
 }
-.demo1 {
-  height: 450px;
-  background-color: blue;
-  margin: 10px;
-  padding: 50px;
-
-  .child-demo1 {
-    height: 150px;
-    width: 100%;
-    background-color: red;
-    margin-top: 100px;
-
-    /* Border style:
-            solid, dashed, dotted, double, inset, outset, ridge, groove  */
-    border-left: 3px dashed #fff;
-    border-top: 3px solid #fff;
-    border-right: 5px dotted #fff;
-    border-bottom: 10px double #fff;
-
-    /* border-radius */
-    border-radius: 50px 15px 50px 15px;
-  }
-}
-
-.demo2 {
-  height: 450px;
-  width: 450px;
-  background-color: greenyellow;
-  margin: auto;
+div {
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
   border-radius: 50%;
 }
-
-.self {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 100px;
+.demo1 {
+  background-color: aqua;
 }
-.square {
-  height: 200px;
-  width: 200px;
-  background-color: red;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 10px solid #000;
+.demo2 {
+  background-color: rgb(255, 0, 0);
+}
+.demo3 {
+  /* 
+        hue: - color (0 - 359) 
+        saturation: - presence of color (0% - 100%)
+        lightness - presence of light (0% - 100%)
+    */
+  background-color: hsl(145, 100%, 50%);
+}
+.demo4 {
+  /* 
+        hex code - #rrggbb
+        rr - red - 00 to ff (0 - 255)
+        gg - green
+        bb - blue
+        hexadecimal number: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+     */
+  background-color: #ffffff;
+}
+.demo5 {
+  /* 
+        rbga (reg, green. blue, alpha)
+        alpha - 0 - 100%
+     */
+  background-color: rgba(255, 0, 0, 50%);
+}
+.demo6 {
+  background-color: hsla(100, 100%, 50%, 0.5);
+}
+.demo7 {
+  /* 
+        8 digit hex code
+        - first 6 digit is color code
+        - last 2 digit is opacity (0 - 9 || a - f)
+    */
+  background-color: #df12ffbb;
+}
+.demo8 {
+  /* background-image: linear-gradient(to left, red, yellow, green); */
+  /* background-image: linear-gradient(to top left, red, yellow, blue);
+  background-image: linear-gradient(45deg, red, yellow, blue); */
+  /* background-image: linear-gradient(45deg, red 20%, rgb(255, 255, 0) 40%, blue); */
+  /* background-image: repeating-linear-gradient(
+    45deg,
+    red 10%,
+    rgb(255, 255, 0) 20%,
+    blue 30%
+  ); */
+  background-image: radial-gradient(red 20%, rgb(255, 255, 0) 30%, blue 40%);
 }

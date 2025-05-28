@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 500px;
+  width: 100%;
+}
+.demo1 {
+  background-color: black;
+  background-image: url(asd.webp);
+  background-repeat: no-repeat;
+  /* 
+    repeat, repeat-x, repeat-y, no-repeat
+  */
+
+  background-position: top;
+  /* top, bottom, left, right, center, top left,
+  top right, bottom left, bottom right */
+
+  background-attachment: fixed;
+}
+.demo2 {
+  background-color: brown;
+  background-image: url(https://imgs.search.brave.com/RBBoNpctXz73XHeIc1X2hroex7X4sH7u8YQ94AfKIwI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNWFVWHcy/TVVoa3l5TXNKWnp6/Mzg3eERlYkU2cDBP/bzhmUy1VU1RrSFl1/NC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVuWlhS/MGVXbHRZV2RsL2N5/NWpiMjB2YVdRdk1U/STQvTnpBMk5UVTFO/Qzl3YUc5MC9ieTl6/YjNWdVpDMTNZWFps/L0xtcHdaejl6UFRZ/eE1uZzIvTVRJbWR6/MHdKbXM5TWpBbS9Z/ejFpU1ZaWE1FMDNT/V2s0L1VsOXJZMUIw/ZWpWdFRXWnEvTFMx/bVdGTnllRXBMWTB0/NC9WbWszY214NFJq/Rk5QUQ.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+}

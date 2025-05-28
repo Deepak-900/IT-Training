@@ -69,3 +69,16 @@ div {
   ); */
   background-image: radial-gradient(red 20%, rgb(255, 255, 0) 30%, blue 40%);
 }
+
+.demo9 {
+  /* 
+    radial -gradient:
+    (radius at x-origin, y-origin, color1, color2, .....)  
+  */
+  background-image: repeating-radial-gradient(
+    100px at 30% 30%,
+    red,
+    yellow 75%,
+    blue 80%
+  );
+}

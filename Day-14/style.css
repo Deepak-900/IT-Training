@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 500px;
+  width: 500px;
+}
+.demo1 {
+  background-color: blue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.demo2 {
+  background-color: green;
+  position: absolute;
+  bottom: 150px;
+  right: 150px;
+}
+.child-demo2 {
+  width: 100px;
+  height: 100px;
+  background-color: indianred;
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+
+.demo3 {
+  background-color: red;
+}
+/* 
+    Positions:
+    1. Static (default)
+    2. Relative: position away from its normal/static position
+        - use only top or bottom && left or right
+    3. Absolute
+        i. without parent
+            - if no parent is present, or if parent is present but position is static, position is set with respect to the browser
+        ii. with parent
+            - if parent is present and parent is relative or absolute, position is set with respect to the parent.
+    4. Fixed
+
+
+*/
+
+.demo4 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+}
+.demo5 {
+  height: 50px;
+  width: 100%;
+  background-color: brown;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}

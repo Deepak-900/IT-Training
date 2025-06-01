@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+body {
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+}
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.6);
+  border-bottom: none;
+  border-left: none;
+
+  nav {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: none;
+  }
+}
+main {
+  width: 100%;
+  display: flex;
+
+  aside {
+    width: 25%;
+    background-color: rgba(92, 26, 26, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  section {
+    width: 100%;
+    border: none;
+
+    .top {
+      display: flex;
+      height: 43vh;
+      border-top: none;
+      border-bottom: none;
+
+      .top-left {
+        width: 50%;
+        background-color: rgba(24, 109, 143, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+      .top-right {
+        width: 50%;
+        background-color: rgba(70, 190, 14, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+      }
+    }
+    .bottom {
+      height: 43vh;
+      width: 100%;
+      display: flex;
+      border-bottom: none;
+
+      .bottom-left {
+        width: 30%;
+        background-color: rgba(255, 255, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+      .bottom-middle {
+        width: 35%;
+        background-color: rgba(255, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+      }
+      .bottom-right {
+        width: 35%;
+        background-color: rgba(16, 146, 16, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: aquamarine;
+  padding: 15px 0;
+  border-top: none;
+  border-right: 2px solid #000;
+}

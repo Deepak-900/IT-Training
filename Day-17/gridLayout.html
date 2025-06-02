@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-columns: repeat(4, 25%);
+      }
+      header {
+        background-color: skyblue;
+        grid-column: 1/5;
+      }
+      footer {
+        background-color: aqua;
+        grid-row: 4;
+        grid-column: 1/5;
+      }
+      .leftsidebar {
+        background-color: antiquewhite;
+        grid-row: 2/4;
+        grid-column: 1;
+      }
+      .rightsidebar {
+        background-color: antiquewhite;
+        grid-row: 2/4;
+        grid-column: 4;
+      }
+      .main1 {
+        background-color: brown;
+        grid-column: 2/4;
+        grid-row: 2;
+      }
+      .main2 {
+        background-color: chocolate;
+        grid-column: 2;
+        grid-row: 3;
+      }
+      .main3 {
+        background-color: yellowgreen;
+        grid-column: 3;
+        grid-row: 3;
+      }
+      nav {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        text-align: center;
+      }
+      li {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Gallery</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+        </nav>
+      </header>
+      <footer>Footer</footer>
+      <div class="leftsidebar">Leftsidebar</div>
+      <div class="rightsidebar">Rightsidebar</div>
+      <div class="main1">Main1</div>
+      <div class="main2">Main2</div>
+      <div class="main3">Main3</div>
+    </div>
+  </body>
+</html>

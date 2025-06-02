@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+body {
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 25% 15% 15% 25%;
+  grid-template-rows: 10% 40% 40% 10%;
+}
+header {
+  background-color: #9a99ff;
+  grid-column: 1/6;
+  grid-row: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  background-color: #aeaaa9;
+  grid-column: 1;
+  grid-row: 2/4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.top-left {
+  background-color: #b3c6e7;
+  grid-column: 2/4;
+  grid-row: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.top-right {
+  background-color: #f7caab;
+  grid-column: 4/6;
+  grid-row: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.botton-left {
+  background-color: #fed966;
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.botton-middle {
+  background-color: #f4b083;
+  grid-column: 3/5;
+  grid-row: 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.botton-right {
+  background-color: #a7d08c;
+  grid-column: 5;
+  grid-row: 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: #f2f2f2;
+  grid-column: 1/6;
+  grid-row: 4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

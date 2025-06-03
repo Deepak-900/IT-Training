@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: greenyellow;
+}
+a:visited {
+  color: brown;
+}
+a:hover {
+  color: skyblue;
+}
+a:active {
+  color: bisque;
+}
+.demo {
+  height: 300px;
+  width: 300px;
+  background: blue;
+}
+.demo:hover {
+  background-color: aqua;
+  box-shadow: inset 0px 0px 50px 10px #000;
+  cursor: pointer;
+}
+.demo:active {
+  background-color: red;
+}
+input:focus {
+  background-color: tomato;
+}
+/* p {
+  /* width: 100%; */
+} */
+p:first-child {
+  text-align: right;
+}
+p:last-child {
+  text-align: center;
+}
+p:nth-child(2) {
+  font-size: 26px;
+}
+p:nth-child(odd) {
+  color: blue;
+}
+p:nth-child(even) {
+  text-transform: uppercase;
+}
+p::first-line {
+  text-decoration: underline;
+}
+p::first-letter {
+  font-size: 64px;
+}
+li:first-child {
+  font-weight: bold;
+}
+p::before {
+  content: "hello";
+  display: block;
+  background-color: yellow;
+}
+p::after {
+  content: "";
+  height: 5px;
+  font-weight: bold;
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  background-color: brown;
+}
+table,
+tr,
+td {
+  border: 3px solid gray;
+  border-collapse: collapse;
+}
+td {
+  height: 30px;
+  width: 30px;
+}
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: gray;
+}
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: gray;
+}

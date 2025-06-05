@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-19</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+        Combinators 
+        1. Grouping combinators:
+            - to apply styles to multiple elements, classes, we can use grouping combinator. Comma(,) is used to group selectors
+                Eg: p,
+                    li,
+                    .demo {
+                    color: blue;
+                    }
+
+        2. Descendant combinator:
+            - all the elements between opening and closing tags are the descendent, we use space ( )  between the parent and descendent element.
+                Eg: .demo h1 {
+                        color: brown;
+                    }
+
+        3. Child Combinator:
+            - Immediate descendants are the child elements.
+            - To apply style to the child elements, we use greater than (>) symbol between the parent and the child element.
+            Eg:
+                .demo > h1 {
+                color: yellow;
+                }
+
+        4. Siblings Combinator:
+            - Siblings are the following elements.
+            i. General - tilde (~)
+                Eg:
+                    .demo ~ h1 {
+                        font-size: 40px;
+                        color: turquoise;
+                        }
+            ii. Adjancent - plus (+) 
+                Eg:
+                    HTML:
+                         <h1>Siblings</h1>
+                        <div class="me-deepak">
+                            <h1>Deepak Maharjan</h1>
+                        </div>
+                    CSS:
+                    .demo + h1 {
+                    background-color: chocolate;
+                    }
+        Selector:
+            1. Universal Selectors (*):
+                - to apply styles to all the elements.
+                - font-family, margin, box-sizing, transition, ...
+
+            2. :root
+                - defines the base values
+            
+            3. Attribute Selectors:
+                - we can specify attribute while applying styles inside square brackets [attributes] 
+                Eg:
+                    HTML:
+                        <h1 first>Hello World!!</h1>
+                    CSS:
+                        h1[first] {
+                        text-decoration: underline;
+                        }
+
+    -->
+    <input type="text" />
+    <input type="email" />
+    <h1 first>Hello World!!</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa
+      soluta dolor nesciunt provident facilis illo aut doloribus nam praesentium
+      magnam animi et numquam eos error, itaque qui voluptates possimus.
+    </p>
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+    <h1>Not a siblings</h1>
+    <div class="demo">
+      <h1>Descendent, Child</h1>
+      <div>
+        <h1>Descendent, Not a child</h1>
+        <div>
+          <h1>Descendent, Not a child</h1>
+        </div>
+      </div>
+    </div>
+    <h1>Siblings. Not a descendants</h1>
+    <h1>Siblings</h1>
+    <h1>Siblings</h1>
+    <div class="me-deepak">
+      <h1>Deepak Maharjan</h1>
+    </div>
+  </body>
+</html>

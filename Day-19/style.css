@@ -1,0 +1,43 @@
+:root {
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 2s;
+}
+p,
+li,
+.demo {
+  color: blue;
+}
+.demo h1 {
+  color: brown;
+}
+.demo > h1 {
+  color: yellow;
+}
+.demo ~ h1 {
+  font-size: 40px;
+  color: turquoise;
+}
+.demo + h1 {
+  background-color: chocolate;
+}
+h1 + .me-deepak {
+  background-color: blueviolet;
+  color: #fff;
+}
+input[type="text"] {
+  background-color: blue;
+  color: #fff;
+}
+input[type="email"] {
+  background-color: dimgray;
+  color: #fff;
+}
+h1[first] {
+  text-decoration: underline;
+}

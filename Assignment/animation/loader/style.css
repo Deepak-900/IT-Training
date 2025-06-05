@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  padding: 5%;
+  color: #fff;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.loader-1 {
+  box-shadow: 0 0 10px 0px #fff;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 #fff;
+  opacity: 60%;
+  border-radius: 50%;
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.dot1 {
+  animation-delay: 0.25s;
+}
+.dot2 {
+  animation-delay: 0.5s;
+}
+.dot3 {
+  animation-delay: 0.75s;
+}
+.dot4 {
+  animation-delay: 1s;
+}
+.dot5 {
+  animation-delay: 1.25s;
+}
+@keyframes loader {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    background-color: aliceblue;
+  }
+}
+
+.loader-2 {
+  box-shadow: 0 0 10px 0px #fff;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-dot {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 aliceblue;
+  border-radius: 50%;
+  animation-name: main-dot-dotanimation2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.loader-dot-2 {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 aliceblue;
+  border-radius: 50%;
+  animation-name: animation2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animation2 {
+  0%,
+  100% {
+    /* transform: translateX(0px); */
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes main-dot-dotanimation2 {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(190px);
+  }
+}
+.square {
+  box-shadow: 0 0 10px 0px #fff;
+  padding: 5%;
+}
+.square-box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: square-box;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.square-box:hover {
+  animation-play-state: paused;
+}
+@keyframes square-box {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-dot {
+  box-shadow: 0 0 10px 0px #fff;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.loading-text {
+  display: flex;
+}
+.dot-sec {
+  height: 10px;
+  margin-top: 22px;
+  margin-left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.dott {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: loading-dot-animate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.dot--1 {
+  animation-delay: 0.25s;
+  background-color: red;
+}
+.dot--2 {
+  animation-delay: 0.5s;
+  background-color: green;
+}
+.dot--3 {
+  animation-delay: 0.75s;
+  background-color: blue;
+}
+@keyframes loading-dot-animate {
+  0%,
+  100% {
+    opacity: 50%;
+  }
+  50% {
+    margin-top: -10px;
+    opacity: 100%;
+  }
+}
+.loading-bar-section {
+  box-shadow: 0 0 10px 0px #fff;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-bar {
+  height: 20px;
+  width: 350px;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+.loader-range {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, red, yellow, blue);
+  animation-name: loading-bar-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes loading-bar-animation {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}

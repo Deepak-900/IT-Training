@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.carousel img {
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}

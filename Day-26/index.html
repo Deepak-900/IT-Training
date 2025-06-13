@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-26</title>
+  </head>
+  <body>
+    <script>
+      //single line comment
+      /*multi line comment*/
+
+      /*
+            variable = let, const, var
+
+            let 
+                - value can be reassigned
+                - value cannot be redeclare
+                - life: block scope
+
+
+            const 
+                - value cannot be changed
+                - value cannot be redeclear
+                - life: block scope
+
+            var 
+                - value can be reassigned
+                - value can be redeclear
+                - life: global
+    
+            */
+      let a = 5;
+      const PI = 3.14;
+      var x = 999;
+      document.write("<br> a = ", a);
+      document.write("<br> PI = ", PI);
+      document.write("<br> x = ", x);
+      document.write("<hr>");
+
+      {
+        let a = 11;
+        const PI = 3.1444;
+        var x = 155;
+        document.write("<br> a = ", a);
+        document.write("<br> PI = ", PI);
+        document.write("<br> x = ", x);
+        document.write("<hr>");
+      }
+      a = 10;
+      //   PI = 3.147;
+      x = 100;
+
+      document.write("<br> a = ", a);
+      document.write("<br> PI = ", PI);
+      document.write("<br> x = ", x);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-28</title>
+  </head>
+  <body>
+    <!-- 
+        Conditional Statements
+            1. If Statement:
+                syntax: 
+                    if(condition){
+                    statements if the condition is true
+                    }
+            
+            2. If-Else Statement:
+                syntax: 
+                    if(condition){
+                        statements if the condition is true
+                    }
+                    else{
+                        statement if the statement is false
+                    }
+            
+            3. If-ElseIf-Else Statement:
+                syntax:
+                    if(condition1){
+                        statement if condition is true
+                    }
+                    else if(condition2){
+                        statement if the condition is true
+                    }
+                    else{
+                        statement if all above conditions are false
+                    }
+            
+            4. Nested if-else Statement:
+                syntax:
+                    if(condition1){
+                        if(conditionA){
+                            statements if condition1 and conditionA are true
+                        }
+                        else{
+                            statements if condition1 is true, but condition is false
+                        }
+                    } else {
+                        if(conditionB){
+                            statements of condition1 id falase, but conditionB id true 
+                        } else{
+                            statements of condition 1 and conditionB are false 
+                        }
+                    }
+        
+            5. Compound Statements:
+                syntax: 
+                    if(condition1 && condition2 && condition3.....){
+                        statements if all the conditions are true
+                    } 
+                    if(condition1 || condition2 || condition3 || ...){
+                        statement of any of the condition is true
+                    }
+    -->
+
+    <script>
+      //WAP to check ifa given number is positive or negative
+
+      //----------If Statement
+      //   let num = -5;
+      //   if (num < 0) {
+      //     document.write("The number is negative");
+      //   }
+      //   if (num > 0) {
+      //     document.write("The number is positive");
+      //   }
+
+      //   //----------If Else Statement
+      //   let num = 5;
+      //   if (num > 0) {
+      //     document.write("The number is positive.");
+      //   } else {
+      //     document.write("The number is negative");
+      //   }
+
+      //----------If ElseIf Else Statement
+      let num = 5;
+      if (num > 0) {
+        document.write("The number is positive.");
+      } else if (num < 0) {
+        document.write("The number is negative");
+      } else {
+        document.write("The number is zero.");
+      }
+
+      //WAP to check greater among 3 digits.
+      //----------Nested-If-Else Statement
+      //   let a = 4;
+      //   let b = 5;
+      //   let c = 6;
+
+      //   if (a > b) {
+      //     if (a > c) {
+      //       document.write("A is greatest.");
+      //     } else {
+      //       document.write("C is greatest.");
+      //     }
+      //   } else {
+      //     if (b > c) {
+      //       document.write("B is greatest.");
+      //     } else {
+      //       document.write("C is greatest.");
+      //     }
+      //   }
+
+      // WAP to input marks of students, check if the student is pass or fail
+      // (pass marks: 40), also calculate his percentage and divisions as follows
+      //   80 % +       - distinction;
+      //   (60 % -80) % - first;
+      //   (50 % -60) % - second;
+      //   (40 % -50) % - third
+      //    < 40 %      - fail;
+
+      //   //----------Conditional Statement
+      //   let eng = Number(prompt("Enter marks in English :"));
+      //   let nep = Number(prompt("Enter marks in Nepali :"));
+      //   let mth = Number(prompt("Enter marks in Math :"));
+      //   let sci = Number(prompt("Enter marks in Science :"));
+      //   let soc = Number(prompt("Enter marks in Social :"));
+
+      //   let total = eng + nep + mth + sci + soc;
+
+      //   let percentage = total / 5;
+
+      //   if (eng < 40 || nep < 40 || mth < 40 || sci < 40 || soc < 40) {
+      //     document.write("<br> Result : Fail");
+      //   } else {
+      //     document.write("<br> Result: Pass");
+      //   }
+
+      //   document.write("<br>Total : ", total);
+      //   document.write("<br>Percentage : ", percentage);
+
+      //   if (eng > 100 || nep > 100 || mth > 100 || sci > 100 || soc > 100) {
+      //     document.write("INPUT ERROR");
+      //   } else if (eng < 0 || nep < 0 || mth < 0 || sci < 0 || soc < 0) {
+      //     document.write("INPUT ERROR");
+      //   } else {
+      //     if (percentage >= 80) {
+      //       document.write("<br>Division: Distinction");
+      //     } else if (percentage >= 60) {
+      //       document.write("<br>Division: First");
+      //     } else if (percentage >= 50) {
+      //       document.write("<br>Division : Second");
+      //     } else if (percentage >= 40) {
+      //       document.write("<br>Division: Third");
+      //     } else {
+      //       document.write("<br>Division: NA");
+      //     }
+      //   }
+
+      /*
+        1. WAP to check if a number is even or odd.
+        2. WAP to check if a given year is leap year or not.
+        3. WAP to input length of 3 sides and check if it is a valid triangle, also check if it is equilateral, isosceles or scalen traingle.
+        4. WAP to input a month in number and return number of days in that month
+        5. WAP to input a number 1 to 7 and display corresponding day  
+      */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-27 || Operators</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Operators
+            - Arthematic Operators
+                + : sum
+                - : difference
+                * : product
+                / : division
+                % (modulo) : remainder
+                ** : exponent (power)
+                ++ : increment (increase by 1)
+                -- : decrement (decrease by 1)
+            
+            - Comparision or relational operator:
+                < less than
+                > greater than
+                <= less than or equal to
+                >= greater than or equal to
+                == equals to (checks only value)
+                === strict equals to (checks values and datatype also)
+                != not equals
+                !== strict not equals to
+
+            - Assignment Operator:
+                = : assigns value
+                +=, -=, *=, /=, %=, **=
+                a = 2
+                a += 3 -> a = a + 3 -> a = 5
+
+            - Logical Operator
+                a = 2, b = 3, c = 4
+                && : AND
+                    - used to compare two conditions
+                    - return true if both the conditions are true,
+                        a<b && a<c -> true
+                        a>b && c>b -> false
+                        a<b && b>c -> false
+
+                || : OR
+                    -  used to compare two conditions
+                    - return true if any of the condition is true
+                    - return false if all of the conditions are false
+                        a>b || b>c || c<d -> true
+                
+                ! : NOT
+                    - return true if condition is false
+                    - return false if condition is true
+                        !(a<b) -> true
+                        !(true) -> false
+                        !(false) -> true
+                
+            - Bitwise Operator
+                & - AND
+                | - OR
+                ~ - negation
+                << - left shift
+                >> - right shift
+
+                    a = 5 (101)
+                    b = 2 (010)
+                    a & b -> 000 -> 0
+                    a | b -> 111 -> 7
+
+            - Typeof Operator
+                typeof(var) -> returns the type of variable 'var' instanceof(var)
+            
+            - Concatenation Operator
+                when used '+' with strings, it will connect two or more strings together
+
+            - Ternary Operator:
+                condition ? value/statement if condition is true : value/statement id condition id false
+
+
+      */
+
+      //------------Start--------Arthematic Operators
+      //   let a = Number(prompt("Enter value of a : "));
+      //   let b = 4;
+
+      //   let a = 5;
+      //   let b = 4;
+      //   let sum = a + b;
+
+      //   document.write("Sum : ", sum);
+
+      //   let diff = a - b;
+      //   document.write("<br>Difference : ", diff);
+
+      //   let product = a * b;
+      //   document.write("<br>Product : ", product);
+
+      //   document.write("<br>Division : ", a / b);
+      //   document.write("<br>Remainder : ", a % b);
+      //   document.write("<br>Power : ", a, "<sup>", b, "</sup> : ", a ** b);
+
+      //   //pre-increment
+      //   document.write("<br> ++a : ", ++a);
+      //   document.write("<br> a : ", a);
+
+      //   //post - increment
+      //   document.write("<br> a++ : ", a++);
+      //   document.write("<br> a : ", a);
+
+      //   //pre-decrement
+      //   document.write("<br> --a : ", --a);
+      //   document.write("<br> a : ", a);
+
+      //   //post-decrement
+      //   document.write("<br> a-- : ", a--);
+      //   document.write("<br> a : ", a);
+
+      //------------End--------Arthematic Operators
+
+      //------------Start--------Comparision Operators
+
+      a = 5;
+      b = 4;
+
+      document.write("<br> a &lt; b : ", a < b);
+      document.write("<br> a &gt; b : ", a > b);
+      document.write("<br> a &lt;= b : ", a <= b);
+      document.write("<br> a &gt;= b : ", a >= b);
+      document.write("<br> a == b : ", a == b);
+      document.write("<br> a === b : ", a === b);
+      document.write("<br> a != b : ", a != b);
+      document.write("<br> a !== b : ", a !== b);
+
+      //------------End--------Comparision Operators
+
+      //------------Start--------Ternary Operators
+
+      a = 7;
+      b = 6;
+
+      max = a > b ? a : b;
+      document.write("<br> Maximum : ", max);
+
+      min =
+        a < b
+          ? document.write("<br> A is less than B")
+          : document.write("<br> B is less than A");
+      //------------End--------Ternary Operators
+    </script>
+  </body>
+</html>

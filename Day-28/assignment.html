@@ -15,12 +15,107 @@
 
   <script>
     // 1. WAP to check if a number is even or odd.
-    let number = Number(prompt("Enter a number : "));
+    // let number = Number(prompt("Enter a number : "));
 
-    if (number % 2 == 0) {
-      document.write(number, " is a Even Number.");
+    // if (number % 2 == 0) {
+    //   document.write(number, " is a Even Number.");
+    // } else {
+    //   document.write(number, " is a Odd Number.");
+    // }
+
+    //2. WAP to check if a given year is leap year or not.
+
+    // let year = Number(prompt("Enter a year : "));
+
+    // if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    //   document.write(year, " is a lear year");
+    // } else {
+    //   document.write(year, " is not a lear year");
+    // }
+
+    // 3. WAP to input length of 3 sides and check if it is a valid triangle, also check if it is equilateral, isosceles or scalen traingle.
+
+    // let x = Number(prompt("Enter the value of x side : "));
+    // let y = Number(prompt("Enter the value of y side : "));
+    // let z = Number(prompt("Enter the value of z side : "));
+
+    // if (x == y && y == z) {
+    //   document.write(
+    //     "The angle of a triangle : x = ",
+    //     x,
+    //     ", y = ",
+    //     y,
+    //     " & z = ",
+    //     z,
+    //     " is equilateral triangle."
+    //   );
+    // } else if (x == y || y == z || z == x) {
+    //   document.write(
+    //     "The angle of a triangle : x = ",
+    //     x,
+    //     " y = ",
+    //     y,
+    //     "& z = ",
+    //     z,
+    //     "is isosceles triangle."
+    //   );
+    // } else {
+    //   document.write(
+    //     "The angle of a triangle : x = ",
+    //     x,
+    //     " y = ",
+    //     y,
+    //     "& z = ",
+    //     z,
+    //     "is scalene triangle."
+    //   );
+    // }
+
+    // 4. WAP to input a month in number and return number of days in that month
+    // let numberOfMonth = Number(prompt("Enter a month in a number"));
+
+    // if (
+    //   numberOfMonth == 1 ||
+    //   numberOfMonth == 3 ||
+    //   numberOfMonth == 5 ||
+    //   numberOfMonth == 7 ||
+    //   numberOfMonth == 8 ||
+    //   numberOfMonth == 10 ||
+    //   numberOfMonth == 12
+    // ) {
+    //   document.write("The number you enter ", numberOfMonth, " has 31 days.");
+    // } else if (
+    //   numberOfMonth == 4 ||
+    //   numberOfMonth == 6 ||
+    //   numberOfMonth == 9 ||
+    //   numberOfMonth == 11
+    // ) {
+    //   document.write("The number you enter ", numberOfMonth, " has 30 days.");
+    // } else {
+    //   document.write(
+    //     "The number you enter ",
+    //     numberOfMonth,
+    //     " has 28/29 days."
+    //   );
+    // }
+
+    //  5. WAP to input a number 1 to 7 and display corresponding day
+
+    let noOfDay = Number(prompt("Enter a day in a number : "));
+    if (noOfDay == 1) {
+      document.write("It's Sunday.");
+    } else if (noOfDay == 2) {
+      document.write("It's Monday.");
+    } else if (noOfDay == 3) {
+      document.write("It's Tuesday.");
+    } else if (noOfDay == 4) {
+      document.write("It's Wednesday.");
+    } else if (noOfDay == 5) {
+      document.write("It's Thursday.");
+    } else if (noOfDay == 6) {
+      document.write("It's Friday.");
     } else {
-      document.write(number, " is a Odd Number.");
+      document.write("It's Saturday.");
     }
   </script>
 </html>

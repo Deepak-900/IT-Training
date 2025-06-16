@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ODD or EVEN  -->
+      <div class="sections">
+        <h3>1. Check if a number is even or odd.</h3>
+        <form action="" id="evenOddForm">
+          <div class="form-group">
+            <input
+              type="number"
+              id="numberInput"
+              placeholder="Enter a number ...."
+            />
+            <span><button type="submit">Check</button></span>
+          </div>
+        </form>
+        <div class="resultBox">
+          <h3>Result : <span id="result"></span></h3>
+        </div>
+      </div>
+
+      <!-- Leap Year  -->
+      <div class="sections">
+        <h3>2. Check if a given year is leap year or not.</h3>
+        <form action="" id="leapYearForm">
+          <div class="form-group">
+            <input
+              type="number"
+              id="leapYearInput"
+              placeholder="Enter a number ...."
+              min="0"
+            />
+            <span><button type="submit">Check</button></span>
+          </div>
+        </form>
+        <div class="resultBox">
+          <h3>Result : <span id="leapYearResult"></span></h3>
+        </div>
+      </div>
+
+      <!-- Triangle   -->
+      <div class="sections">
+        <h3>
+          3. Input length of 3 sides and check if it is a valid triangle, also
+          check if it is equilateral, isosceles or scalen traingle.
+        </h3>
+        <form action="" id="triangleForm">
+          <div class="form-group">
+            <input
+              type="number"
+              class="triangle"
+              id="xInput"
+              placeholder="X"
+              min="0"
+            />
+            <input
+              type="number"
+              class="triangle"
+              id="yInput"
+              placeholder="Y"
+              min="0"
+            />
+            <input
+              type="number"
+              class="triangle"
+              id="zInput"
+              placeholder="Z"
+              min="0"
+            />
+            <span><button type="submit">Check</button></span>
+          </div>
+        </form>
+        <div class="resultBox">
+          <h3>Result : <span id="traingleResult"></span></h3>
+        </div>
+      </div>
+
+      <!-- Month in Number   -->
+      <div class="sections">
+        <h3>
+          4. Input a month in number and return number of days in that month
+        </h3>
+        <form action="" id="monthInNumberForm">
+          <div class="form-group">
+            <input
+              type="number"
+              id="monthInNumberInput"
+              placeholder="Enter a number in a month ..."
+              min="1"
+              max="12"
+            />
+
+            <span><button type="submit">Check</button></span>
+          </div>
+        </form>
+        <div class="resultBox">
+          <h3>Result : <span id="monthInNumberResult"></span></h3>
+        </div>
+      </div>
+
+      <!-- Day according to the user given number   -->
+      <div class="sections">
+        <h3>5. Input a number 1 to 7 and display corresponding day</h3>
+        <form action="" id="dayInNumberForm">
+          <div class="form-group">
+            <input
+              type="number"
+              id="dayInNumberInput"
+              placeholder="Enter a day in number ..."
+              min="1"
+              max="7"
+            />
+
+            <span><button type="submit">Check</button></span>
+          </div>
+        </form>
+        <div class="resultBox">
+          <h3>Result : <span id="dayInNumberResult"></span></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <!-- 
+        Arrow Function:
+            syntax:
+                const function_name = (parameters) => {
+                    statements
+                    return
+                }
+    -->
+
+    <script>
+      const add = (m, n) => {
+        let sum = m + n;
+        return sum;
+      };
+      document.write("Sum : ", add(5, 6));
+
+      const difference = () => {
+        let a = prompt("Enter a : ");
+        let b = prompt("Enter b : ");
+        document.write("Difference : ", a - b);
+      };
+
+      difference();
+
+      const square = (x) => x * x;
+      document.write("<br> Square of 7 is ", square(7));
+    </script>
+  </body>
+</html>

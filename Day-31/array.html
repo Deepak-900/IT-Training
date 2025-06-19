@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-31</title>
+  </head>
+  <body>
+    <!-- 
+        Array:
+            - collection of data
+    -->
+
+    <script>
+      //   let arr = [1, 2, 3, "a", "b", "c", true, false];
+      //   document.write(arr);
+
+      let fruits = ["Apple", "Orange", "Mango", "Banana", "Grapes"];
+
+      // .length -> returns number of member in array
+      document.write("Fruits : ", fruits);
+      document.write("<br> Length of fruits : ", fruits.length);
+
+      // index - pointer to member of array
+      // starts from 0 to length-1
+      document.write("<br> First Member : ", fruits[0]);
+      document.write("<br> Second Member : ", fruits[1]);
+      document.write("<br> Third Member : ", fruits[2]);
+      document.write("<br> Fourth Member : ", fruits[3]);
+      document.write("<br> Fifth Member : ", fruits[4]);
+
+      //------------add new members to array
+
+      // push(new member) - adds new member to the end of the array
+      fruits.push("Papaya");
+      document.write("<br> Push Result : ", fruits);
+
+      // unshift(new member) - adds new member to the start of the array
+      fruits.unshift("Pear");
+      document.write("<br> Unshift Result : ", fruits);
+
+      // pop() - remove a member from end of the array
+      let removed = fruits.pop();
+      document.write("<br> Pop Result : ", fruits);
+      document.write("<br> Removed : ", removed);
+
+      // shift() - removes a member from start of the array
+      removed = fruits.shift();
+      document.write("<br> Shift Result : ", fruits);
+      document.write("<br> Removed : ", removed);
+
+      // splice(index,number,new-member)
+      // index - where to add or remove
+      // number - number of members to remove
+      // new member - new members to add
+
+      removed = fruits.splice(2, 1, "Papaya", "Pear", "Grapes");
+      document.write("<br> Splice Result : ", fruits);
+      document.write("<br> Removed : ", removed);
+
+      // sort -> sorting
+      fruits.sort();
+      document.write("<br> Sort : ", fruits);
+
+      //reversed -> sort from asc to des
+      fruits.reverse();
+      document.write("<br> Reversed : ", fruits);
+
+      let i = fruits.indexOf("Grapes");
+      document.write("<br> Location of grapes : ", i);
+
+      i = fruits.lastIndexOf("Grapes");
+      document.write("<br> Location of last grapes : ", i);
+
+      let veg = ["Potato", "Tomato", "Carrot", "Radish", "Onion"];
+      let lists = fruits.concat(veg);
+      document.write("<br> Fruits : ", fruits);
+      document.write("<br>Vegetable : ", veg);
+      document.write("<br>Shoping Lists : ", lists);
+      document.write("<br>Shoping Lists items number  : ", lists.length);
+
+      lists = [fruits, veg];
+      lists = lists.flat();
+      document.write("<br>Shoping Lists : ", lists);
+      document.write("<br>Shoping Lists items number  : ", lists.length);
+
+      // ... - rest/spread operator
+      lists = [...fruits, ...veg];
+      document.write("<br>Shoping Lists : ", lists);
+      document.write("<br>Shoping Lists items number  : ", lists.length);
+
+      let [a, b, ...c] = fruits;
+      document.write("<br> a = ", a);
+      document.write("<br> b = ", b);
+      document.write("<br> c = ", c);
+
+      // slice(start index, end index)
+      // - create new array from start to the end index, end is not included
+      // - if end is not provided  - will slice to the end
+      // - negative index will search from end
+      let new_list = lists.slice(0, 7);
+      document.write("<br>New List : ", new_list);
+
+      let new_v_list = lists.slice(7, 12);
+      document.write("<br>New Veg List : ", new_v_list);
+
+      new_v_list = lists.slice(-5, -1);
+      document.write("<br>New Veg List : ", new_v_list);
+
+      lists.fill("000", 3, 5);
+      document.write("<br> Final List : ", lists);
+
+      for (i = 0; i < lists.length; i++) {
+        document.write("<li>", lists[i], "</li>");
+      }
+    </script>
+  </body>
+</html>

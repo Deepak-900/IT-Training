@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "orange", "mango", "grapes"];
+
+      for (i = 0; i < fruits.length; i++) {
+        document.write("<li>", fruits[i], "</li>");
+      }
+
+      //   for in
+      for (var index in fruits) {
+        document.write("<h5>", fruits[index], "</h5>");
+      }
+
+      // for of
+      for (var fruit of fruits) {
+        document.write("<li>", fruit, "</li>");
+      }
+
+      // for each
+      // - value cannot be return
+      fruits.forEach((member) => {
+        document.write("<h6>", member, "</h6>");
+      });
+
+      // map
+      // - value can be return
+      fruits.map((member) => {
+        document.write("<h6>", member, "</h6>");
+      });
+    </script>
+  </body>
+</html>

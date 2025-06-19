@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <script>
+      let colors = [
+        "Red",
+        "Green",
+        "Blue",
+        "Voilet",
+        "Alicewhite",
+        "Maroon",
+        "Orange",
+      ];
+
+      for (i = 0; i < colors.length; i++) {
+        document.write("<li>", colors[i], "</li>");
+      }
+
+      // For in
+      for (var index in colors) {
+        document.write("<h5>", colors[index], "</h5>");
+      }
+
+      //   For of
+      for (var color of colors) {
+        document.write("<li>", color, "</li>");
+      }
+
+      //For Each
+      document.write("<hr>For Each");
+      colors.forEach((names) => {
+        document.write("<h5>", names, "</h5>");
+      });
+
+      //map
+      document.write("<hr>Map");
+
+      colors.map((names) => {
+        document.write("<li>", names, "</li>");
+      });
+    </script>
+  </body>
+</html>

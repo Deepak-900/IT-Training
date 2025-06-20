@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <!-- 
+        String methods:
+            - let str = '' or ""
+            
+    -->
+
+    <script>
+      let str = "Welcome to JavaScript class.";
+      document.write("<br>", str);
+
+      // length
+      document.write("<br> Length of String : ", str.length);
+
+      // toUpperCase
+      document.write("<br> UpperCase : ", str.toUpperCase());
+      // toLowerCase
+      document.write("<br> UpperCase : ", str.toLowerCase());
+
+      // First Letter
+      document.write("<br> First letter : ", str[0]);
+      // Last Letter
+      document.write("<br> Last Letter : ", str[str.length - 1]);
+
+      // charAt
+      let ch = str.charAt(11);
+      document.write("<br> Character at 11 : ", ch);
+
+      // charCodeAt
+      ch = str.charCodeAt(11);
+      document.write("<br> Character code at 11 : ", ch);
+
+      // slice(start, end)
+      //   - same as slice of array
+      //   - creates new string from start to end, end is not included
+      //   - negative index will
+      let new_str = str.slice(11, 21);
+      document.write("<br> Slice: ", new_str);
+
+      new_str = str.slice(-6, -1);
+      document.write("<br> Slice: ", new_str);
+
+      new_str = str.slice(-6);
+      document.write("<br> Slice: ", new_str);
+
+      // subString(start, end)
+      // - similar to slice but doesnot accept negative values for start and end.
+      // - Start and end can be interchanges
+      new_str = str.substring(11);
+      document.write("<br> Slice: ", new_str);
+
+      //   substr(start index, length)
+      // - creates new string from start index of given length
+
+      new_str = str.substr(11, 10);
+      document.write("<br> New String: ", new_str);
+      new_str = str.substr(-11, 10);
+      document.write("<br> New String: ", new_str);
+      new_str = str.substr(-11);
+      document.write("<br> New String: ", new_str);
+
+      //   trim()
+      // - removes empty spaces from start and end
+      str = "     JavaScript      ";
+      document.write("<br> String : ", str.length);
+
+      new_str = str.trim();
+      document.write("<br> String : ", new_str.length);
+
+      new_str = str.trimStart();
+      document.write("<br> Start trim : ", new_str.length);
+      new_str = str.trimEnd();
+      document.write("<br> End trim : ", new_str.length);
+
+      // concat
+      let fname = "Deepak";
+      let lname = "Maharjan";
+      let fullname = fname + " " + lname;
+      document.write("<br> Fullname : ", fullname);
+
+      //concat
+      fullname = fname.concat(" ", lname);
+      document.write("<br>Concat Fullname : ", fullname);
+
+      //repeat
+      new_str = str.repeat(5);
+      document.write("<br>", new_str);
+
+      //replace
+      new_str = new_str.replace("JavaScript", "HTML");
+      document.write("<br> Replace : ", new_str);
+
+      //replaceAll
+      new_str = new_str.replaceAll("JavaScript", "HTML");
+      document.write("<br> Replace all : ", new_str);
+
+      let num = "1234";
+      //padStart, padEnd
+      document.write("<br> Pad Start : ", num.padStart(6, "0"));
+      document.write("<br> Pad End : ", num.padEnd(6, "x"));
+
+      // split
+      str = "Welcome to JavaScript class."
+        .toUpperCase()
+        .concat("Welcome to JavaScript class.");
+      document.write("<br>Concat String : ", str);
+
+      new_str = str.split(" ");
+      document.write("<br>Split String : ", new_str);
+
+      new_str.forEach((element) => {
+        document.write("<li>", element, "</li>");
+      });
+    </script>
+  </body>
+</html>

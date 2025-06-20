@@ -25,15 +25,74 @@
 
       // for each
       // - value cannot be return
-      fruits.forEach((member) => {
-        document.write("<h6>", member, "</h6>");
+      // - first parameter is member
+      // - second parameter is index of the member
+      let new_fruits = fruits.forEach((member, index) => {
+        document.write("<h6>", member, "-", index, "</h6>");
+        return member.toUpperCase();
       });
+      document.write("<br>New Fruits : ", new_fruits);
 
       // map
       // - value can be return
-      fruits.map((member) => {
-        document.write("<h6>", member, "</h6>");
+      new_fruits = fruits.map((member, index) => {
+        document.write("<h6>", member, "-", index, "</h6>");
+        return member.toUpperCase();
       });
+      document.write("<br>New Fruits : ", new_fruits);
+
+      // filter
+      // - returns data in arrays
+      let filtered_result = fruits.filter((fruit) => {
+        return fruit.match("ap");
+      });
+      document.write("<br>Filtered Result : ", filtered_result);
+
+      // Find
+      // - returns the first matched item only
+      let find_result = fruits.find((fruit) => {
+        return fruit.match("ap");
+      });
+      document.write("<br>Find Result : ", find_result);
+
+      // findIndex
+      let find_index = fruits.findIndex((fruit) => {
+        return fruit.match("ap");
+      });
+      document.write("<br>Find Index : ", find_index);
+
+      // findLast
+      let find_last = fruits.findLast((fruit) => fruit.match("ap"));
+      document.write("<br>Find Last Index : ", find_last);
+
+      // findLastIndex
+      let find_last_index = fruits.findLastIndex((fruit) => fruit.match("ap"));
+      document.write("<br>Find Last Index : ", find_last_index);
+
+      // reduce
+      let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let sum = num.reduce((accumulator, current) => {
+        document.write(
+          "<br> Accumulator = ",
+          accumulator,
+          ", Current = ",
+          current
+        );
+        return accumulator + current;
+      });
+      document.write("<br> Sum : ", sum);
+
+      // reduceRight
+      let sum2 = num.reduceRight((accumulator, current) => {
+        document.write(
+          "<br> Accumulator = ",
+          accumulator,
+          ", Current = ",
+          current
+        );
+        return accumulator + current;
+      });
+      document.write("<br> Sum : ", sum2);
     </script>
   </body>
 </html>

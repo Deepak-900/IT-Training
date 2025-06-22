@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Event</title>
+  </head>
+  <body>
+    <h1
+      id="msg"
+      onmouseenter="changeColor()"
+      onmouseleave="resetColor()"
+      onclick="changebg()"
+    >
+      GOOD MORNING
+    </h1>
+    <!-- 
+        onfocus -> while action to text box
+        onblur -> out from text box
+    -->
+    <input
+      type="text"
+      name=""
+      id="input"
+      onfocus="changeColor()"
+      onblur="resetColor()"
+      onkeyup="getInput()"
+    />
+    <button id="btn">CLICK ME</button>
+
+    <script>
+      const changeColor = () => {
+        document.getElementById("msg").style.color = "red";
+      };
+      const resetColor = () => {
+        document.getElementById("msg").style.color = "blue";
+      };
+      const changebg = () => {
+        document.getElementById("btn").style.backgroundColor = "brown";
+        document.getElementById("btn").style.color = "white";
+      };
+
+      const getInput = () => {
+        let inputText = document.getElementById("input").value;
+        document.getElementById("msg").innerHTML = inputText;
+      };
+    </script>
+  </body>
+</html>

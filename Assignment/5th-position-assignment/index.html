@@ -7,11 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container-img">
       <div class="buttons">
-        <button class="left-button">&#129144;</button>
-        <button class="right-button">&#129146;</button>
+        <button class="left-button" id="left-button">&#129144;</button>
+        <button class="right-button" id="right-button">&#129146;</button>
       </div>
     </div>
+
+    <script>
+      let slider_img = document.getElementById("container-img");
+      // let slider_img = document.getElementById("container-img");
+      let left = document.getElementById("left-button");
+      let right = document.getElementById("right-button");
+
+      let images = ["image.webp", "2.webp", "3.jpg", "3.webp"];
+      let index = 0;
+      slider_img.style.backgroundImage = `url(${images[index]})`;
+      // slider_img.style.backgroundImage = "url(3.jpg)";
+
+      function nextImage() {
+        index++;
+        if (index >= images.length) {
+          index = 0;
+        }
+        slider_img.style.backgroundImage = `url(${images[index]})`;
+      }
+
+      function prevImage() {
+        index--;
+        if (index < 0) {
+          index = images.length - 1;
+        }
+        slider_img.style.backgroundImage = `url(${images[index]})`;
+      }
+
+      left.addEventListener("click", prevImage);
+      right.addEventListener("click", nextImage);
+
+      setInterval(nextImage, [1000]);
+    </script>
   </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-33</title>
+  </head>
+  <body>
+    <script>
+      // month and day passes array data so it shows array index
+      //   let today = new Date(''2000','11','32''); user assign date yyyy/mm/dd
+      let today = new Date();
+      document.write("Today is : ", today);
+
+      let yy = today.getFullYear();
+      document.write("<br>Year = ", yy);
+
+      let month = today.getMonth();
+      document.write("<br>Month = ", month);
+      let months = [
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC",
+      ];
+      document.write("<br> Month in text = ", months[month]);
+
+      let date = today.getDate();
+      document.write("<br>Date = ", date);
+
+      let day = today.getDay();
+      document.write("<br>Day = ", day);
+      let days = [
+        "SUNDAY",
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY",
+      ];
+      document.write("<br>Day in text = ", days[day]);
+
+      let hh = today.getHours();
+      let min = today.getMinutes();
+      let sec = today.getSeconds();
+      let am_pm;
+
+      // `` - template literal
+      if (hh > 12) {
+        am_pm = "PM";
+      } else {
+        am_pm = "AM";
+      }
+      let time_str = `${hh}:${min}:${sec}${am_pm}`;
+      document.write("<br>Time : ", time_str);
+
+      let time_st = today.toTimeString();
+      document.write("<br>Time : ", time_st);
+
+      let date_st = today.toDateString();
+      document.write("<br>Date : ", date_st);
+
+      time_st = today.toLocaleTimeString();
+      document.write("<br>Time : ", time_st);
+
+      date_st = today.toLocaleDateString();
+      document.write("<br>Date : ", date_st);
+
+      let str = Date.now();
+      document.write("<br>No of milliseconds : ", str);
+      document.write("<br>No of milliseconds : ", typeof str);
+    </script>
+  </body>
+</html>

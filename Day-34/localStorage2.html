@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage 2</title>
+  </head>
+  <body>
+    <script>
+      let name = localStorage.getItem("name");
+      document.write("Name : ", name);
+
+      let age = localStorage.getItem("age");
+      document.write("<br> Age : ", age);
+
+      let phone = Number(localStorage.getItem("phone"));
+      document.write("<br> Phone : ", phone);
+
+      let role = Boolean(localStorage.getItem("isAdmin")) ? "CLIENT" : "ADMIN";
+      document.write("<br> Role : ", role);
+
+      //  JSON.parse(JSON string) - converts JSON string into object
+      //  Javascript Object Notation
+      let fruits = JSON.parse(localStorage.getItem("fruits"));
+      document.write("<br> Fruits : ", fruits);
+      document.write("<br> Fruits : ", fruits.length);
+
+      let person = JSON.parse(localStorage.getItem("person"));
+      document.write("<br> Name : ", person.name);
+      document.write("<br> Age : ", person.age);
+      document.write("<br> Phone : ", person.phone);
+      document.write("<br> Address : ", person.address);
+    </script>
+  </body>
+</html>

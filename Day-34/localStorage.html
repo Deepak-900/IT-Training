@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <script>
+      localStorage.setItem("name", "Deepak");
+      localStorage.setItem("phone", 9884345685);
+      localStorage.setItem("age", 26);
+      localStorage.setItem("isAdmin", false);
+
+      let fruits = ["apple", "orange", "mango"];
+      //   JSON.stringify(object) - converts object into JSON string
+      localStorage.setItem("fruits", JSON.stringify(fruits));
+
+      //   JS - Object
+      let person = {
+        name: "Deepak",
+        age: 26,
+        phone: 9876543210,
+        address: "Lalitpur",
+      };
+
+      document.write("<br>Name : ", person.name);
+      document.write("<br>Age : ", person.age);
+      document.write("<br>Phone : ", person.phone);
+      document.write("<br>Address : ", person.address);
+
+      localStorage.setItem("person", JSON.stringify(person));
+    </script>
+  </body>
+</html>

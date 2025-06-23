@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <!-- 
+        SYNCHRONOUS / ASYNCHRONOUS JAVASCRIPT
+        
+        SYNCHRONOUS 
+            - works is sync and program is halted when an error is encountered
+        
+        ASYNCHRONOUS
+            - none blocking code
+            - works in their own time parallely
+            - when a error is encountered particular functions are halted
+
+    
+    -->
+    <script>
+      let fruits = ["apple", "orange"];
+      function addFruit(fruit) {
+        fruits.push(fruit);
+      }
+
+      function displayFruits() {
+        document.write("<br>Fruits : ", fruits);
+      }
+
+      //   asynchronous functions
+      function addFruitAsync(fruit) {
+        setTimeout(() => {
+          fruits.push(fruit);
+        }, 1000);
+      }
+      function displayFruitsAsync() {
+        setTimeout(() => {
+          document.write("<br>Fruits : ", fruits);
+        }, 2000);
+      }
+
+      //   addFruit("mango");
+      //   displayFruits();
+      //   addFruit("grapes");
+      //   displayFruits();
+
+      addFruitAsync("mango");
+      displayFruitsAsync();
+      addFruitAsync("grapes");
+      displayFruitsAsync();
+      addFruitAsync("pear");
+      displayFruitsAsync();
+    </script>
+  </body>
+</html>

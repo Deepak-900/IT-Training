@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Dice</title>
+  </head>
+  <body>
+    <script>
+      function rollDice() {
+        // Generate a random number between 1 and 6
+        const roll = Math.floor(Math.random() * 6) + 1;
+        // document.write(roll);
+
+        // Unicode representations of dice faces
+        const diceFaces = {
+          1: "⚀",
+          2: "⚁",
+          3: "⚂",
+          4: "⚃",
+          5: "⚄",
+          6: "⚅",
+        };
+
+        // Display the result
+        document.write(`You rolled : ${diceFaces[roll]} (${roll})`);
+
+        // Game logic
+        if (roll === 1) {
+          document.write("<br>Result: 🎉 You win!");
+        } else if (roll === 6) {
+          document.write("<br>Result: 🔁 Try again.");
+        } else {
+          document.write("<br>Result: ❌ You lose.");
+        }
+      }
+
+      rollDice();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <!-- 
+        SYNCHRONOUS / ASYNCHRONOUS JAVASCRIPT
+        
+        SYNCHRONOUS 
+            - works is sync and program is halted when an error is encountered
+        
+        ASYNCHRONOUS
+            - none blocking code
+            - works in their own time parallely
+            - when a error is encountered particular functions are halted
+
+    
+    -->
+    <script>
+      let fruits = ["apple", "orange"];
+      function addFruit(fruit) {
+        fruits.push(fruit);
+      }
+
+      function displayFruits() {
+        document.write("<br>Fruits : ", fruits);
+      }
+
+      //   asynchronous functions
+      function addFruitAsync(fruit) {
+        setTimeout(() => {
+          fruits.push(fruit);
+        }, 2000);
+      }
+
+      function addFruitCallBack(fruit, callback) {
+        setTimeout(() => {
+          fruits.push(fruit);
+          callback();
+        }, 3000);
+      }
+
+      // Promise - .then .catch
+      function addFruitsPromise(new_fruit) {
+        return new Promise((resolve, reject) => {
+          let error = false;
+          if (!error) {
+            fruits.push(new_fruit);
+            resolve();
+          } else {
+            reject("Something went wrong.");
+          }
+        });
+      }
+
+      // Async Await
+      async function demoFunction() {
+        try {
+          await addFruitsPromise("Papaya");
+          displayFruitsAsync();
+        } catch (error) {
+          document.write(error);
+        }
+      }
+
+      demoFunction();
+
+      function displayFruitsAsync() {
+        setTimeout(() => {
+          document.write("<br>Fruits : ", fruits);
+        }, 2000);
+      }
+
+      //   addFruit("mango");
+      //   displayFruits();
+      //   addFruit("grapes");
+      //   displayFruits();
+
+      // displayFruitsAsync();
+      // displayFruitsAsync();
+      // displayFruitsAsync();
+      // addFruitCallBack("mango", displayFruitsAsync);
+      // addFruitCallBack("grapes", displayFruitsAsync);
+      // addFruitCallBack("pear", displayFruitsAsync);
+
+      // callback
+
+      // promise - .then .catch
+
+      addFruitsPromise("grapes")
+        .then(() => {
+          displayFruitsAsync();
+        })
+        .catch((error) => {
+          document.write(error);
+        });
+
+      // async await
+    </script>
+  </body>
+</html>

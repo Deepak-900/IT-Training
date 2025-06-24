@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <!-- 
+        Regular Expression - 
+            /text/ -> regular expression
+            /   /  -> expression literal
+            /abc/  -> abc
+
+
+            [] - collection
+            [abc] - a or b or c
+            [a-z] - lowercase alphabets
+            [A-Z] - lowercase alphabets
+            [0-9] - numbers
+            [a-zA-Z] - alphabets
+            [a-z0-9A-Z] - alphabets and numbers
+            [!@#$%] - collection of !, @, #, $, %
+
+            Meta characters - information about the characters
+            ^ - start of the expression
+            $ - end of the expression
+
+            . - single character
+            a+ - one or more "a" character
+            a* - zero or more "a" character
+
+            {} - length
+            a{5} - 5 characters
+            .{5} - length of character 
+            .{5,} - minimum 5 character
+            a{5,} - minimum 5 a 
+            .{0,5} - maximum 5 character
+            .{3,5} - minimum 3, maximum 5
+
+
+    -->
+    <script>
+      //   let expr = /.{5,}$/;
+      let name_expr = /^[a-zA-Z]{3,10}$/;
+      let str = "asdfasd";
+      if (str.match(name_expr)) {
+        document.write("Matched.");
+      } else {
+        document.write("Unmatched");
+      }
+
+      // let name_expr = /^[a-zA-Z]{3,10}$/;
+      // let phone_expr = /^[0-9]{10}$/
+      // let email_expr = /^[a-zA-Z][A-Za-z0-9_][@][a-z](gmail)$/
+      // let email_expr = /^[a-zA-Z][A-Za-z0-9_][@][a-z]+[.][a-z]+$/
+      // let password_expr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]){8,30}$/
+    </script>
+  </body>
+</html>
